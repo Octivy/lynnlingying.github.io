@@ -347,10 +347,10 @@
   animation: cloudLarge 105s infinite;
 }
 .skill-item {
-  width: 600px;
-  height: 480px;
-  margin: 100px auto auto 80px;
-  float: left;
+  min-width: 600px;
+  height: 450px;
+  margin: 100px 200px auto 20px;
+  flex: 3;
 }
 .wrap {
   position: relative;
@@ -373,7 +373,7 @@
 .wrap .nav li {
   float: left;
   text-align: center;
-  height: 120px;
+  height: 113px;
   width: 80px;
   background: #ccc;
   box-sizing: border-box;
@@ -456,7 +456,12 @@
   }
 }
 #canvas {
-  margin: 200px auto auto 200px;
+  margin: 200px 20px auto 200px;
+}
+.skill-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 /*demo*/
 #demo {
