@@ -6,7 +6,7 @@ $('#dowebok').fullpage({
        anchors:["page1","page2","page3","page4","page5"],
        scrollingSpeed: 500,
        css3: true,
-       resize: true,
+    loopBottom:true,
        afterRender: function(){
                $('#home_info,#home_info_box').animate({opacity:'1',width:'900px'},1000,function(){
                            $.each($("#home_info_box>li"),function(){
@@ -116,7 +116,7 @@ $('#dowebok').fullpage({
               if (index==4) {
                     $("aside a").eq(3).addClass("selected").siblings().removeClass("selected");
 
-              };
+              }
                if (index==5) {
                     $("aside a").eq(4).addClass("selected").siblings().removeClass("selected");
                    $(".flip").on("click",function(){
@@ -131,20 +131,14 @@ $(function(){
         $("#header_p1").html("Resume");
         $("#header_p2").html("前端工程师");
     }).mouseout(function(){
-        $("#header_p1").html("F2E");
+        $("#header_p1").html("Lynn");
         $("#header_p2").html("个人简历");
     })
 
-//侧边导航文字切换
-    $("aside a").hover(function(){
-        $(this).find("b").fadeToggle(200,"easeInOutCubic");
-    })
 // 头像切换
     $("#home_photo2").hover(function(){
         $(this).fadeTo(1000,1);
     },function(){
         $(this).stop(true,false).fadeTo(1000,0);
     });
-
-
 })
