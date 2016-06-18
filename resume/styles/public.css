@@ -1,11 +1,11 @@
 html,body{
     border: 0 none;
-    font-family: inherit;
     font-size: 100%;
     font-style: inherit;
     font-weight: inherit;
     margin:0px;
     color:#1d2f51;
+    font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 }
 *{
     margin:0;

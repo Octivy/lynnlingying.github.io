@@ -460,7 +460,6 @@
 }
 .skill-content {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 /*demo*/
