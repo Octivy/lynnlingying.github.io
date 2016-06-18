@@ -459,8 +459,7 @@
   }
 }
 #canvas {
-  margin: 100px;
-  flex: 1;
+  margin: 100px 50px;
 }
 .skill-content {
   width: 900px;
