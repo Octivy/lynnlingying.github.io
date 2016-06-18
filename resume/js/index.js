@@ -17,11 +17,10 @@ $('#dowebok').fullpage({
 		},
        afterLoad:function(anchorLink,index){
               if (index==1) {
-                     $("aside a").eq(0).addClass("selected").siblings().removeClass("selected");  
+                     $("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
               }
               if (index==2) {
                      $("aside a").eq(1).addClass("selected").siblings().removeClass("selected");
-
                           $(".about-title").animate({"width":"400px"},500,function(){
                               $(".about-info").animate({opacity:'1'},200,function(){
                               $.each($(".about-me-list>li"),function(){
