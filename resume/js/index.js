@@ -119,9 +119,6 @@ $('#dowebok').fullpage({
               }
                if (index==5) {
                     $("aside a").eq(4).addClass("selected").siblings().removeClass("selected");
-                   $(".flip").on("click",function(){
-                       $(".experience_content .card").toggleClass("flipped");
-                   });
               }
        },
 });
@@ -134,7 +131,9 @@ $(function(){
         $("#header_p1").html("Lynn");
         $("#header_p2").html("个人简历");
     })
-
+    $(".flip").on("click",function(){
+        $(".experience_content .card").toggleClass("flipped");
+    });
 // 头像切换
     $("#home_photo2").hover(function(){
         $(this).fadeTo(1000,1);
