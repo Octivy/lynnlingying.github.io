@@ -353,7 +353,7 @@
   min-width: 600px;
   height: 450px;
   margin: 100px auto;
-  flex: 3;
+  flex: 2;
 }
 .wrap {
   position: relative;
